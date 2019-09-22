@@ -3,24 +3,16 @@
 <head>
     <title>Title</title>
     <link rel="canonical" href="https://olian04.github.io/get-shit-done/" />
-    <style type="text/css">
-    /* --- application CSS here --- */
-    *{
-      background-color: #F5F4F0;
-      font-family: Georgia, serif;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <script src="/index.js"></script>
   <script>
   // register ServiceWorker, remember to use absolute path!
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/get-shit-done/sw.js', {scope: '/get-shit-done/'})
   }
-  
-  // --- Application code here ---
   </script>
+  <script src="index.js"></script>
 </body>
 </html>
