@@ -31,7 +31,7 @@ export default class MainView extends Vue {
 
 <style scoped>
 .main {
-  --section-height-closed: 70px;
+  --section-height-closed: 150px;
   --section-height-open: calc(100% - var(--section-height-closed));
 
   position: relative;
@@ -45,7 +45,7 @@ export default class MainView extends Vue {
   position: relative;
   width: 100%;
   height: var(--section-height-closed);
-  transition: height 0.5s ease-out;
+  transition: height 0.33s ease-out;
 }
 .section.active {
   height: var(--section-height-open);

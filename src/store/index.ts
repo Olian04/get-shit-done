@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex, { StoreOptions, MutationTree } from 'vuex';
 import VuexPersist from 'vuex-persist';
+import { RewardSystem } from './rewards';
 
 Vue.use(Vuex);
 
@@ -11,8 +12,17 @@ const vuexPersist = new VuexPersist({
 
 const initialState = {
   accumulatedBreakTime: 0,
-  onBreak: false
+  onBreak: false,
+  rewardSystems: [] as RewardSystem[]
 };
+
+// FIXME: DEMO CALL!
+initialState.rewardSystems.push({
+  type: 'manual-button',
+  title: 'Completed a task',
+  worth: 60,
+  cooldown: 0
+});
 
 export type Store = typeof initialState;
 
@@ -22,6 +32,9 @@ const mutators = {
   },
   removeBreakTime (state: Store, amount: number) {
     state.accumulatedBreakTime -= amount;
+    if (state.accumulatedBreakTime < 0) {
+      state.accumulatedBreakTime = 0;
+    }
   },
   startBreak (state: Store) {
     state.onBreak = true;
