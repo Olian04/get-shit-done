@@ -1,6 +1,29 @@
 # get-shit-done
 
-## References
+## Project setup
+```
+npm install
+```
 
-* [lib/Brynja](https://github.com/Olian04/brynja)
-* [sw.js](https://gist.github.com/kosamari/7c5d1e8449b2fbc97d372675f16b566e)
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
