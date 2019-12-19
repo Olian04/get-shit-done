@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["edit_work"],{"83d1":function(n,e,l){"use strict";l.r(e);var o,t,u=l("2877"),w={},p=Object(u["a"])(w,o,t,!1,null,null,null);e["default"]=p.exports}}]);
+//# sourceMappingURL=edit_work.64831f3d.js.map
