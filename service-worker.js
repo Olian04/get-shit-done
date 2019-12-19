@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/get-shit-done/precache-manifest.9631ab0f7e20f0e3cdf8c1950998b306.js"
+  "/get-shit-done/precache-manifest.012fdebf8f43f3bce7a4b3565a591b79.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "get-shit-done"});
