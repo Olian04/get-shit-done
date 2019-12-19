@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "lint:fix": "vue-cli-service lint --fix",
-    "publish": "node scripts/deployToProduction.js"
+    "deploy": "node scripts/deployToProduction.js"
   },
   "dependencies": {
     "@types/gh-pages": "^2.0.1",
@@ -17,6 +17,7 @@
     "gh-pages": "^2.1.1",
     "normalize.css": "^8.0.1",
     "reflect-metadata": "^0.1.13",
+    "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.3.0",
@@ -29,6 +30,7 @@
     "@types/mocha": "^5.2.4",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-pwa": "^4.1.1",
     "@vue/cli-plugin-router": "^4.1.0",
     "@vue/cli-plugin-typescript": "^4.1.0",
     "@vue/cli-plugin-unit-mocha": "^4.1.0",
